@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from setuptools import setup
+from setuptools import find_packages, setup
 import os
 
 
@@ -8,13 +8,14 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name='django-credits',
-      version='0.1',
+      version='0.1.3',
       description="A marquee for giving credit to contributors.",
       author='Bob Erb',
       author_email='bob.erb@gmail.com',
       url='https://github.com/rerb/django-credits',
       long_description=read("README.rst"),
-      packages=['django_credits'],
+      packages=find_packages(),
+      include_package_data=True,
       classifiers=[
           'Environment :: Web Environment',
           'Intended Audience :: Developers',
@@ -25,4 +26,4 @@ setup(name='django-credits',
           'Framework :: Django',
       ],
       install_requires=["Django>=1.4"],
-      zip_save=False)
+      zip_safe=False)
