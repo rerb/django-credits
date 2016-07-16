@@ -44,7 +44,7 @@ class Credit(models.Model):
         if not self.ordinal:
             last_credit = Credit.objects.last()
             self.ordinal = last_credit.ordinal + 10 if last_credit else 10
-        return super().save(*args, *kwargs)
+        return super(Credit, self).save(*args, **kwargs)
 
 
 class Contribution(models.Model):
