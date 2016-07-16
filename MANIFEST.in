@@ -1,6 +1,7 @@
 include LICENSE
 include README.rst
 recursive-include django_credits/migrations *
-recursive-include django_credits/static *
+recursive-include django_credits/static/css *
+recursive-include django_credits/static/js *
 recursive-include django_credits/templates *
 recursive-include django_credits/templatetags *
