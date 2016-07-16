@@ -6,7 +6,7 @@ from ..models import Credit
 
 register = template.Library()
 
-DEFAULT_DJANGO_CREDITS_DELAY = 4000  # milliseconds
+DEFAULT_DJANGO_CREDITS_DELAY = 3000  # milliseconds
 
 
 @register.inclusion_tag("django_credits.html")
