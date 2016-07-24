@@ -8,7 +8,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name='django-credits',
-      version='0.1.3',
+      version='0.2.0',
       description="A marquee for giving credit to contributors.",
       author='Bob Erb',
       author_email='bob.erb@gmail.com',
