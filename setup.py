@@ -25,5 +25,5 @@ setup(name='django-credits',
           'Programming Language :: Python :: 2.7',
           'Framework :: Django',
       ],
-      install_requires=["Django>=1.4"],
+      install_requires=["Django>=1.8"],
       zip_safe=False)
